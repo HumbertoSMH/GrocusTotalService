@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.grocus.grocustotalservice.InformacionGeneral">
+
+    <LinearLayout
+        android:layout_width="304dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical|center_horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:layout_height="400dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:layoutDirection="ltr">
+
+        <TextView
+            android:text="Placas: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/textView4" />
+
+        <EditText
+            android:id="@+id/txtPlaca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginBottom="10dp"
+            android:paddingBottom="15dp" />
+
+        <TextView
+            android:text="Kilometraje: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/textView7" />
+
+        <EditText
+            android:id="@+id/txtKilometraje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:text="N° de Servicio:"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8" />
+
+        <EditText
+            android:id="@+id/txtNServicio"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:text="Otras Correcciones: "
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10" />
+
+        <EditText
+            android:id="@+id/txtCorrecciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:text="Tipo de Mantenimiento: "
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11" />
+
+        <RadioGroup
+            android:id="@+id/rbgTipoMantenimiento"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="100dp"
+            android:checkedButton="@+id/rbCorrectivo">
+
+            <RadioButton
+                android:id="@+id/rbCorrectivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:text="Correctivo" />
+
+            <RadioButton
+                android:id="@+id/rbPreventivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Preventivo" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnGuardarInformacionGen"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.06"
+            android:background="@color/colorPrimary"
+            android:text="Guardar" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

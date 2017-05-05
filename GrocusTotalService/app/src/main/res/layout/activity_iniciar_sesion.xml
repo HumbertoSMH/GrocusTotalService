@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_iniciar_sesion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.grocus.grocustotalservice.IniciarSesion">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/lblVersion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="V 1.0.1"
+                android:textAlignment="textEnd"
+                tools:text="V 1.0.1" />
+
+            <TextView
+                android:id="@+id/txtLoginTexto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Total Service"
+                android:textAlignment="center"
+                android:textColor="@color/texto"
+                android:textSize="25sp"
+                android:typeface="sans"
+                tools:text="Total Service" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                app:srcCompat="@mipmap/logo_vya"
+                android:id="@+id/imageView2"
+                android:layout_weight="1"
+                android:layout_height="150dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="15dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@mipmap/ic_user"
+                    android:id="@+id/imageView3"
+                    android:layout_weight="1"
+                    android:layout_gravity="left" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/txtUsuario"
+                    android:layout_weight="1"
+                    style="@android:style/Widget.Material.EditText"
+                    android:hint="Usuario" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="15dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@mipmap/ic_lock"
+                    android:id="@+id/imageView4"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/txtPassword"
+                    android:layout_weight="1"
+                    style="@android:style/Widget.Material.EditText"
+                    android:hint="Contraseña" />
+            </LinearLayout>
+
+            <Button
+                android:text="Iniciar Sesión"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnIniciarSesion"
+                android:layout_width="200dp"
+                style="@android:style/Widget.Material.Light.Button"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/colorPrimaryDark" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

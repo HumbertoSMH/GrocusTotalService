@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_check_out"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.grocus.grocustotalservice.CheckOut">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblIdServicioCO"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblResponsableCO"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:textColor="#000" />
+
+        <TextView
+            android:text="CHECK OUT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            tools:text="CHECK OUT"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Firma:"
+            android:id="@+id/textView12"
+            android:textIsSelectable="false"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000" />
+
+        <Button
+            android:backgroundTint="#23ad36"
+            android:text="Limpiar"
+            android:id="@+id/clearButton"
+            android:layout_gravity="center_horizontal"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:layout_height="35dp"
+            android:layout_width="100dp" />
+
+        <LinearLayout
+            android:id="@+id/firmaLinearLayout"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="100dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:color/background_light">
+
+                <TextView
+                    android:text="Comentarios: "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lblComentarios"
+                    tools:text="Comentarios:"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/txtComentariosCO"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView5"
+                    android:text="Fotografias del servicio"
+                    tools:text="Fotografias del servicio"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+                <Button
+                    android:text="Fotografía Frente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnFotografiaFCO"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_gravity="center" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/imgFrenteCO" />
+
+                <Button
+                    android:text="Fotografía Lado Derecho"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnFotografiaDCO"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/colorPrimary" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/imgDerechoCO" />
+
+                <Button
+                    android:text="Fotografía Lado Izquierdo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnFotografiaICO"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_gravity="center" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/imgIzquierdoCO" />
+
+                <Button
+                    android:text="Fotografía Trasera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnFotografiaACO"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_gravity="center" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/imgAtrasCO" />
+
+                <Button
+                    android:text="Guardar"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnGuardarCO"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

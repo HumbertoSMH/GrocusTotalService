@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_servicios"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.grocus.grocustotalservice.Services">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="Bienvenido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblSBienvenido"
+            tools:text="Bienvenido"
+            android:layout_marginBottom="10dp"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblSFecha"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblIdVisita"
+            android:layout_marginBottom="5dp"
+            android:textColor="#000"
+            android:textStyle="normal|bold"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblResponsable"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000"
+            android:textStyle="normal|bold"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnInfoGeneral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorAccent"
+            android:text="Información General"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/btnEncuesta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorAccent"
+            android:text="Encuesta de Satisfación"
+            android:textColor="#FFF" />
+
+        <Button
+            android:text="Check out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCheckOut"
+            android:textColor="#FFF"
+            android:background="@color/colorAccent"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:text="Check out sin validar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCheckOutSinValidar"
+            android:textColor="#FFF"
+            android:background="@color/colorAccent"
+            android:layout_marginBottom="10dp" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lvServicios" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_capturar_servicio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.grocus.grocustotalservice.CapturarServicio">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Bienvenido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblCSBienvenido"
+            tools:text="Bienvenido"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblCSFecha"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblCSResponsable"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblCSTituloServicio"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            android:textColor="#000" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lblComentarios"
+                    android:textAppearance="@android:style/TextAppearance.Material.Large"
+                    android:layout_marginBottom="10dp"
+                    android:text="Comentarios del Servicio:"
+                    tools:text="Comentarios del Servicio:" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/txtComentariosServicio"
+                    android:layout_weight="0.34"
+                    android:layout_height="200dp"
+                    android:hint="Comentarios"
+                    style="@android:style/Widget.Material.EditText"
+                    android:layout_marginBottom="15dp" />
+
+                <TextView
+                    android:text="Fotografía (Opcional):"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView6"
+                    android:textAppearance="@android:style/TextAppearance.Material.Large"
+                    tools:text="Fotografía (Opcional):"
+                    android:layout_marginBottom="10dp" />
+
+                <Button
+                    android:text="Capturar Fotografía"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnCapturarFoto"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/colorPrimary" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/imgServicio"
+                    android:layout_marginBottom="10dp"
+                    android:adjustViewBounds="false"
+                    android:background="@color/colorAccent"
+                    android:scaleType="fitXY" />
+
+                <Button
+                    android:text="Guardar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnGuardar"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</RelativeLayout>

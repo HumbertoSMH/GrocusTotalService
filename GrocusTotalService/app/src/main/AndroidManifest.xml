@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.grocus.grocustotalservice">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_vya"
+        android:label="Total Service "
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".IniciarSesion">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ListadoServicios"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CheckIn"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Services"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CapturarServicio"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChechOutSinValidar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CheckOut"
+            android:screenOrientation="portrait" />
+        <activity android:name=".InformacionGeneral"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".EncuestaServicio"
+            android:screenOrientation="portrait"></activity>
+
+    </application>
+
+</manifest>
